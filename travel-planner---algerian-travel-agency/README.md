@@ -1,20 +1,40 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://ai.google.dev/static/site-assets/images/share-ais-513315318.png" />
-</div>
+# Travel Planner — Algerian Travel Agency
 
-# Run and deploy your AI Studio app
+A production-ready React + TypeScript travel-agency website built with Vite and Tailwind CSS.
 
-This contains everything you need to run your app locally.
+## Stack
 
-View your app in AI Studio: https://ai.studio/apps/62c9a0b5-a5ed-484d-b459-3df1f56bf844
+- React 19
+- TypeScript
+- Vite
+- Tailwind CSS 4
+- Lucide React
+- Motion
 
-## Run Locally
+## Run locally
 
-**Prerequisites:**  Node.js
+```bash
+npm install
+npm run dev
+```
 
+## Production build
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+```bash
+npm run lint
+npm run build
+npm run preview
+```
+
+The application lives in `travel-planner---algerian-travel-agency/`. When deploying from the repository root, configure the deployment platform's **Root Directory** to that folder.
+
+## Deployment
+
+This is a Vite single-page application. For Vercel, use the project directory above, keep the framework detection appropriate for Vite, and deploy the generated `dist` directory.
+
+## Important production notes
+
+- Flight results shown by the UI are demonstration data unless a live flight provider is explicitly configured. They must not be presented as live inventory or guaranteed prices.
+- Agency contact details, licensing information, social accounts, coordinates, offers and other business claims should be verified before publication.
+- Booking/CMS state currently uses browser-side storage. A real centralized booking/admin backend is required for production booking management.
+- Never commit API keys or other secrets to the repository. Use deployment environment variables for integrations.
