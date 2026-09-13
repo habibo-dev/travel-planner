@@ -1,0 +1,6 @@
+{
+  "name": "Travel Planner - Algerian Travel Agency",
+  "description": "Premium Algerian travel agency platform for flights, hotels, organized tours, and Umrah packages with full Arabic RTL, French, and English localization.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
