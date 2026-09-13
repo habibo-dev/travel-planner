@@ -1,6 +1,6 @@
 # Travel Planner — Algerian Travel Agency
 
-A production-ready React + TypeScript travel-agency website built with Vite and Tailwind CSS.
+A React + TypeScript travel-agency website built with Vite and Tailwind CSS.
 
 ## Stack
 
@@ -30,11 +30,12 @@ The application lives in `travel-planner---algerian-travel-agency/`. When deploy
 
 ## Deployment
 
-This is a Vite single-page application. For Vercel, use the project directory above, keep the framework detection appropriate for Vite, and deploy the generated `dist` directory.
+This is a Vite single-page application. For Vercel, use the project directory above and deploy the generated `dist` directory.
 
-## Important production notes
+## Production safety
 
-- Flight results shown by the UI are demonstration data unless a live flight provider is explicitly configured. They must not be presented as live inventory or guaranteed prices.
-- Agency contact details, licensing information, social accounts, coordinates, offers and other business claims should be verified before publication.
-- Booking/CMS state currently uses browser-side storage. A real centralized booking/admin backend is required for production booking management.
+- Flight search is a **request flow**, not a live flight inventory. The site must not display invented flight availability, schedules or prices.
+- Customer testimonials and traveler counts must be based on verified, authorized material before publication.
+- Agency contact details, licensing information, social accounts, coordinates, offers and other business claims must be verified before publication.
+- Booking/CMS state currently uses browser-side storage. A centralized backend/database is required for real multi-user production booking management.
 - Never commit API keys or other secrets to the repository. Use deployment environment variables for integrations.
